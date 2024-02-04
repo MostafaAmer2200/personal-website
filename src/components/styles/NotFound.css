@@ -1,0 +1,24 @@
+.not-found-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.not-found-container h1{
+    color: aliceblue;
+    background-image: linear-gradient(120deg,#fff,#5f49d7 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.not-found-container h2{
+    color: aliceblue;
+    font-weight: 300;
+    background-image: linear-gradient(120deg,#fff,#5f49d7 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.navbar {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.navbar a{
+  opacity: 0.7;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  margin-top: 12px;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 50px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-family: "Montserrat", sans-serif
+}
+
+.logo-img {
+  float: left;
+  position: relative;
+  margin-top: 0px;
+  margin-left: 15px;
+}
+
+.navbar a:hover,
+.navbar a:focus{
+  opacity: 1.0;
+}
+
+ 
+@media screen and (max-width: 479px) {
+  .navbar {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .navbar a{
+    opacity: 0.7;
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    text-transform: capitalize;
+    margin-top: 12px;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 50px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    font-family: "Montserrat", sans-serif
+  }
+  
+  .logo-img {
+    float: left;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 15px;
+  }
+  
+  .navbar a:hover,
+  .navbar a:focus{
+    opacity: 1.0;
+  }
+}
+
+.navbar-dropdown {
+  display: none;
+}
+
+
+@media screen and (max-width: 479px) {
+  .navbar {
+    display: none;
+  }
+
+  .navbar-dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit;
+    padding: 10px;
+
+  }
+
+  /* .logo {
+    margin-left: 10px;
+  } */
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .dropbtn {
+    background-color: inherit;
+    color: white;
+    padding: 10px;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: black;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* z-index: 1; */
+  }
+  
+  .dropdown-content a {
+    color: aliceblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+}
+

@@ -1,0 +1,184 @@
+*{
+    scroll-behavior: smooth;
+  }
+
+.home {
+    margin-top: 10%;
+    /* text-align: center; */
+    margin-left: 10%;
+}
+
+.home h1{
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.colored-text {
+    font-size: 62px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(120deg,#fff,#5f49d7 17%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 4s;
+
+}
+
+
+.horizontal-line {
+    background-color: antiquewhite;
+    width: 200px;
+    height: 1px;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+.quick-intro {
+    margin-top: 30px;
+    color: aliceblue;
+    margin-left: 10%;
+}
+
+.quick-intro p{
+
+    margin: 0;
+    padding: 3px;
+}
+
+
+.quick-intro li{
+    position: relative;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.quick-intro li::before{
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: #5f49d7;
+
+}
+
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    padding: 0px;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.quick-intro span{
+    background-image: linear-gradient(120deg,#fff,#5f49d7 17%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.about-me {
+
+    color: aliceblue;
+    margin-top: 15%;
+    margin-left: 10%;
+    display: flex;
+}
+
+.about-me h1{
+    font-weight: 300;
+    display: inline-block;
+    color: #ccd6f6;
+    margin: 0;
+}
+
+.short-intro{
+    margin-top: 20px;
+}
+
+.short-intro p {
+    color: aliceblue;
+    margin: 0;
+    padding: 3px;
+}
+
+
+.animation-slidein {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 1s ease-out;
+    /* transition-delay: 0.4s; */
+    
+}
+
+.scroll-animation {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/*  Optimize for phone section  */
+
+@media screen and (max-width: 479px) {
+    .home h1{
+        color: aliceblue;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .colored-text{
+        font-size: 32px;
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(120deg,#fff,#5f49d7 17%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: fadeIn 4s;
+    }
+
+
+    .short-intro p {
+        color: aliceblue;
+        margin: 0;
+        padding: 0px;
+        font-size: 12px;
+    }
+
+    .about-me h1{
+        font-weight: 300;
+        font-size: 26px;
+        display: inline-block;
+        color: #ccd6f6;
+        margin: 0;
+    }
+    
+    .grid-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0px;
+        padding: 0px;
+        margin-top: 25px;
+        list-style: none;
+    }
+    
+}
